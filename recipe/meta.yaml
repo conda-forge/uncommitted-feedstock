@@ -1,6 +1,6 @@
 {% set name = "uncommitted" %}
-{% set version = "1.6" %}
-{% set sha256 = "c1bf738447b8968c2c3876e8d02ef848dd899440b565e8e897fda97cd1ba3c7a" %}
+{% set version = "1.7" %}
+{% set sha256 = "9012ca624a60486c49626f28f5ef7f0b489f1f70415763d384019f0e6c164f18" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install
   preserve_egg_dir: True
   entry_points:
@@ -36,7 +36,7 @@ about:
   home: https://github.com/brandon-rhodes/uncommitted
   license: MIT
   license_family: MIT
-  # license_file: LICENSE # When added to MANIFEST.in – brandon-rhodes/uncommitted#13
+  license_file: LICENSE
   summary: 'Scan filesystem for changes not committed to version control'
   dev_url: https://github.com/brandon-rhodes/uncommitted
 
