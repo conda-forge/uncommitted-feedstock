@@ -1,6 +1,6 @@
 {% set name = "uncommitted" %}
-{% set version = "1.8" %}
-{% set sha256 = "2dee253029ade921fec3d648ac4bff640a7658436d5fc4feebb84b55c4b435e3" %}
+{% set version = "2.1" %}
+{% set sha256 = "ae2b4f79b5f515a5eb4d3e28318d535f9496458a9bb2e8e4ba5195312b114658" %}
 
 package:
   name: {{ name|lower }}
