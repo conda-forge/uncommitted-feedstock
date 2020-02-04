@@ -1,6 +1,6 @@
 {% set name = "uncommitted" %}
-{% set version = "2.1" %}
-{% set sha256 = "ae2b4f79b5f515a5eb4d3e28318d535f9496458a9bb2e8e4ba5195312b114658" %}
+{% set version = "2.2" %}
+{% set sha256 = "11bec8509649810561e3940c38ad9e3dec54a2c98b71ea47f5dad8ab874edffd" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   preserve_egg_dir: True
   entry_points:
     - uncommitted = uncommitted.command:main
