@@ -1,6 +1,6 @@
 {% set name = "uncommitted" %}
-{% set version = "2.2" %}
-{% set sha256 = "11bec8509649810561e3940c38ad9e3dec54a2c98b71ea47f5dad8ab874edffd" %}
+{% set version = "2.3" %}
+{% set sha256 = "4e5e51a2c2acbf2ef2d4c96e7f910a7df94a1d274e3f520a002e249525bba41e" %}
 
 package:
   name: {{ name|lower }}
@@ -15,7 +15,7 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
-  preserve_egg_dir: True
+  preserve_egg_dir: true
   entry_points:
     - uncommitted = uncommitted.command:main
 
@@ -39,7 +39,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Scan filesystem for changes not committed to version control'
+  summary: Scan filesystem for changes not committed to version control
   dev_url: https://github.com/brandon-rhodes/uncommitted
 
 extra:
