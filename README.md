@@ -5,11 +5,11 @@ Home: https://github.com/brandon-rhodes/uncommitted
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/uncommitted-feedstock/blob/master/LICENSE.txt)
 
 Summary: Scan filesystem for changes not committed to version control
 
-
+Development: https://github.com/brandon-rhodes/uncommitted
 
 Current build status
 ====================
